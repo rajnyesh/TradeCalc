@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<title>Transaction Entry</title>
+</head>
+<body>
+	<form action="/transactions" method="post">
+		<div>
+			<table>
+				<tr>
+					<td><label>Date</label></td>
+					<td><input type="text" name="trans_date"/></td>
+				</tr>
+
+				<tr>
+					<td><label>Amount/ Value</label></td>
+					<td><input type="text" name="trans_val"/></td>
+				</tr>
+
+				<tr>
+					<td><label>Transaction type</label></td>
+					<td><select name="trans_type">
+							<option value="Credit">Credit</option>
+							<option value="Debit">Debit</option>
+					</select></td>
+				</tr>
+
+				<tr>
+					<td><label>Details(if any)</label></td>
+					<td><input type="text" name="details"/></td>
+				</tr>
+
+				<tr>
+					<td colspan="2" align="center">
+						<input type="submit" value="Submit"/>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</form>
+</body>
+</html>
